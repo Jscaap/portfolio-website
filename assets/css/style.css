@@ -215,6 +215,14 @@ body{
     background-color: black;
     height: 550px;
     position: relative;
+     z-index: 1;
+}
+
+.content-2 .container,
+.content-2 h2,
+.content-2 p {
+  position: relative;
+  z-index: 2; 
 }
 
 .sentence-1{
@@ -276,12 +284,13 @@ body{
 
 .element-3-container{
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: -25%;
+  left: -10%;
+  z-index: 0; 
 }
 
 .element-3-img{
-  /* width: 1000px; */
+  width: 450px;
 }
 
 .content-3{
@@ -290,98 +299,9 @@ body{
     border-radius: 30px;
 }
 
-.content-4{
-  /* background-color: #3f3f3f; */
-  /* background-color: #AAAAAA; */
-  /* background-color: black; */
-    background:
-    /* pink glow bottom-left */
-    radial-gradient(circle at 15% 100%, #27225c 0%, transparent 60%),
-    /* green glow bottom-right */
-    radial-gradient(circle at 85% 100%, #89c5e6 0%, transparent 60%),
-    /* violet glow bottom-center */
-    radial-gradient(circle at 50% 100%, #a26db4 0%, transparent 65%),
-    /* main black background */
-    linear-gradient(to bottom, #000000 0%, #000000 70%, #090113 100%);
-  color: #fff;
+.content-3 h2{
+  color: white;
 }
-
-.card-galaxy {
-  background: transparent;
-  border: none;
-  border-radius: 1rem;
-  /* box-shadow: 0 0 28px rgba(255, 255, 255, 0.35); */
-  transition: transform 0.35s ease, box-shadow 0.35s ease, background-position 2s ease;
-  overflow: hidden;
-}
-
-.card-galaxy:hover {
-  transform: translateY(-6px);
-  background-position: 100% 50%;
-  box-shadow: 0 0 44px rgba(223, 212, 219, 0.6);
-}
-
-/* Project Image */
-.project-img {
-  height: 300px;
-  object-fit: cover;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  opacity: 0.95;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.card-galaxy:hover .project-img {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-/* Galaxy Button */
-.btn-galaxy {
-  color: #fff;
-background: linear-gradient(90deg, #27225c, #89c5e6 , #a26db4); 
-  border: none;
-  border-radius: 50px;
-  padding: 10px 28px;
-  box-shadow: 0 0 16px rgba(255, 255, 255, 0.45);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn-galaxy:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 28px rgba(255, 255, 255, 0.8);
-  color: #fff;
-}
-
-
-
-
-.input {
-    display: none;
-}
-
-input:checked + label {
-    width: 600px;
-}
-
-input:checked + label .description {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
-
-.card[for="c1"] {
-    background-image: url('./img1.jpeg');
-}
-.card[for="c2"] {
-    background-image: url('./img2.jpeg');
-}
-.card[for="c3"] {
-    background-image: url('./img3.jpeg');
-}
-.card[for="c4"] {
-    background-image: url('./img4.jpeg');
-}
-
 
 /* Scroll animation */
 .animate-on-scroll {
@@ -449,11 +369,11 @@ input:checked + label .description {
 }
 
 .itemLeft,
-.itemRight {
+.itemRight {margin-top: 15px;
   width: 200px;
   height: 60px;
-  background-color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* background: linear-gradient(90deg, #ffff, #8a89b8); */
+  box-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
   border-radius: 35px;
   position: absolute;
   animation-timing-function: linear;
@@ -461,14 +381,26 @@ input:checked + label .description {
   animation-iteration-count: infinite;
 }
 
+.itemLeft p{
+  color: white;
+  text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
+}
+
+.itemRight p{
+  color: white;
+  text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
+}
+
 .itemLeft {
   left: max(calc(200px * 8), 100%);
   animation-name: scrollLeft;
+    background: linear-gradient(90deg, #27225c, #89c5e6 , #a26db4); 
 }
 
 .itemRight {
   right: max(calc(200px * 8), calc(100% + 200px));
   animation-name: scrollRight;
+  background: linear-gradient(90deg, #a26db4, #89c5e6, #27225c); 
 }
 
 .item1 {
@@ -502,3 +434,97 @@ input:checked + label .description {
 .item8 {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
+
+
+.content-4{
+  /* background-color: #3f3f3f; */
+  /* background-color: #AAAAAA; */
+  /* background-color: black; */
+   background:
+    /* pink glow left-middle */
+    radial-gradient(circle at 20% 60%, #27225c 0%, transparent 60%),
+    /* green glow right-middle */
+    radial-gradient(circle at 80% 60%, #89c5e6 0%, transparent 60%),
+    /* violet glow center-middle */
+    radial-gradient(circle at 50% 55%, #a26db4 0%, transparent 65%),
+    /* main black base */
+    linear-gradient(to bottom, #000000 0%, #000000 15%, #090113 50%, #000000 85%, #000000 100%);
+  background-blend-mode: screen;
+  color: #fff;
+}
+
+.card-galaxy {
+  background: transparent;
+  border: none;
+  border-radius: 1rem;
+  /* box-shadow: 0 0 28px rgba(255, 255, 255, 0.35); */
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background-position 2s ease;
+  overflow: hidden;
+}
+
+.card-galaxy:hover {
+  transform: translateY(-6px);
+  background-position: 100% 50%;
+  box-shadow: 0 0 44px rgba(223, 212, 219, 0.6);
+}
+
+/* Project Image */
+.project-img {
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  opacity: 0.95;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card-galaxy:hover .project-img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Galaxy Button */
+.btn-galaxy {
+  color: #fff;
+  background: linear-gradient(180deg, #ffff, #8a89b8);
+   box-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 28px;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-galaxy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 28px rgba(255, 255, 255, 0.8);
+  color: #fff;
+}
+
+.input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('./img1.jpeg');
+}
+.card[for="c2"] {
+    background-image: url('./img2.jpeg');
+}
+.card[for="c3"] {
+    background-image: url('./img3.jpeg');
+}
+.card[for="c4"] {
+    background-image: url('./img4.jpeg');
+}
+
+
