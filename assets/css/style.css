@@ -70,8 +70,51 @@ body{
 
 .content-1{
   height: 650px;
-    background-color: #F0F0F0;
-    /* background-color: black; */
+  /* background-color: #F0F0F0; */
+  background-color: black;
+  position: relative;
+}
+
+.background-container{
+  position: absolute;
+  top: -120px;
+  left: 0;
+  width: 100vw;   
+  height: 100vh;  
+  display: flex;
+  justify-content: center;  
+  align-items: center;   
+}
+
+.background-img{
+  width: 1200px;
+  filter: brightness(80%) blur(0.8px);
+  box-shadow: 0 0 20px #AAAAAA, 0 0 5px #AAAAAA;
+}
+
+@keyframes floatElement {
+  from { transform: translateY(-5px); }
+  to { transform: translateY(-12px); }
+}
+
+.element-1-container{
+  position: absolute;
+  top: -50px;
+  left: 10px;
+}
+
+.element-1-img{
+  width: 450px; 
+  animation: floatElement 3s ease-in-out infinite alternate;
+}
+
+.element-2-container{
+  position: absolute;
+  left: 70%;
+}
+
+.element-2-img{
+  width: 450px; 
 }
 
 .vertical-text {
@@ -85,9 +128,9 @@ body{
     font-size: 1.5em;
     /* font-weight: bold; */
     /* color: #3f3f3f; */
-    color: #AAAAAA;
-    /* color: white; */
-    /* text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA; */
+    /* color: #AAAAAA; */
+    color: white;
+    text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
     /* filter: blur(2px); */
     animation-delay: 0.3s;
 }
@@ -97,19 +140,20 @@ body{
     font-size: 1.5em;
     /* font-weight: bold; */
     /* color: black; */
-    /* color: white; */
+    color: white;
     /* color: #AAAAAA; */
-    color: #3f3f3f;
-    /* text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA; */
+    /* color: #3f3f3f; */
+    text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
       animation-delay: 0.9s;
 }
 
 .word-3{
     font-family: "Cormorant Garamond";
     font-size: 1.5em;
+    text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
     /* font-weight: bold; */
-    color: #3f3f3f;
-    /* color: white; */
+    /* color: #3f3f3f; */
+    color: white;
     /* filter: blur(2px); */
     animation-delay: 1.5s;
 }
@@ -147,8 +191,21 @@ body{
   animation-delay: 1.5s;
 }
 
-.button1{
-    padding: 4em;
+.get-in-touch-button-container{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100vw;   
+  height: 100vh;  
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+}
+
+.get-in-touch-button{
+   background: linear-gradient(90deg, #ffff, #8a89b8);
+   box-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
+   border-radius: 50px;
 }
 
 .content-2{
