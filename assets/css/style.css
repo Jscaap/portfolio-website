@@ -38,7 +38,9 @@ body{
 
 /* header */
 .header-wrapper{
-    background-color: #F0F0F0;
+    background-color: black;  
+    height: 80px;
+    /* background: linear-gradient(100deg, black, #56458a, #ba69a7); */
     /* background-color: #FBFBFB; */
 }
 
@@ -52,9 +54,10 @@ body{
     /* z-index: 1000; */
 }
 
-.logo{
-    width: 50px;
-    height: auto;
+.logo-img{
+  width: 200px;
+  margin-top: -10px;
+  height: auto;
 }
 
 .icon i{
