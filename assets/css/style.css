@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #ffff;
+    background-color: black;
 }
 
 #preloader {
@@ -68,7 +68,7 @@ body{
 /* main page */
 .wrapper{
     /* background-color: #F0F0F0; */
-    background-color: #FBFBFB;
+    background-color: black;
 }
 
 .content-1{
@@ -212,8 +212,9 @@ body{
 }
 
 .content-2{
-    /* background-color: #F0F0F0; */
-    height: 450px;
+    background-color: black;
+    height: 550px;
+    position: relative;
 }
 
 .sentence-1{
@@ -232,19 +233,20 @@ body{
 .word1{
   font-family: "Bodoni Moda";
     font-size: 2em;
-    /* color: white; */
+    color: white;
 }
 
 .word2{
   font-family: "Bodoni Moda";
   font-size: 2em;
+  color: white;
   /* padding-left: 1em; */
 }
 
 .sentence-2{
     width: 75%;
     font-size: 1.5em;
-    color: #3f3f3f;
+    color: white; 
 }
 
 .typing-paragraph {
@@ -272,6 +274,15 @@ body{
   }
 }
 
+.element-3-container{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.element-3-img{
+  /* width: 1000px; */
+}
 
 .content-3{
     height: 400px;
