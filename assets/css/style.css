@@ -211,6 +211,53 @@ body{
    border-radius: 50px;
 }
 
+
+.social-media {
+  /* background-color: white; */
+  background: rgba(255, 255, 255, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border-radius: 15px;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  color: #fff;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 2rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Hover glow like your galaxy theme */
+.social-link:hover {
+  color: #ff00a8;
+  text-shadow: 0 0 20px rgba(255, 0, 168, 0.8);
+  transform: scale(1.2);
+}
+
+.fa-github{
+  /* color: black !important; */
+  color: white !important;
+  font-size: 30px;
+}
+
+.fa-linkedin-in{
+  /* color: black !important; */
+  color: white !important;
+  font-size: 30px;
+}
+
+.fa-envelope{
+  /* color: black !important; */
+  color: white !important;
+  font-size: 30px;
+}
+
+
+
 .content-2{
     background-color: black;
     height: 550px;
@@ -292,6 +339,7 @@ body{
 .element-3-img{
   width: 450px;
 }
+
 
 .content-3{
     height: 400px;
