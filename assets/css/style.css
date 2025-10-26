@@ -7,6 +7,7 @@
 
 body{
     background-color: black;
+    padding-top: 100px;
 }
 
 #preloader {
@@ -37,31 +38,59 @@ body{
 }
 
 /* header */
-.header-wrapper{
-    background-color: black;  
-    height: 80px;
-    /* background: linear-gradient(100deg, black, #56458a, #ba69a7); */
-    /* background-color: #FBFBFB; */
+.header-wrapper {
+  position: fixed;       
+  top: 0;                 
+  left: 0;
+  width: 100%;            
+  z-index: 1000;          
+  background: rgba(0, 0, 0, 0.7); 
+  backdrop-filter: blur(10px);    
+  -webkit-backdrop-filter: blur(10px);
+  transition: background 0.3s ease;
 }
 
 .nav-link{
     color: black !important;
 }
 
-.header-wrapper{
-    /* position: sticky; */
-    /* top: 0; */
-    /* z-index: 1000; */
-}
-
 .logo-img{
-  width: 200px;
-  margin-top: -10px;
+  width: 100px;
   height: auto;
 }
 
-.icon i{
-    color: black !important;
+.project-button{
+  display: inline-block;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-comment {
+  font-size: 40px;
+  color: white;
+  /* text-shadow: 0 0 12px rgba(162, 109, 180, 0.4); */
+  /* text-shadow: 0 0 5px #AAAAAA, 0 0 5px #AAAAAA; */
+}
+
+.say-hi-text {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2em;
+  background: linear-gradient(180deg, #27225c, #89c5e6, #a26db4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(162, 109, 180, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* Optional hover effect */
+.icon:hover .say-hi-text {
+  text-shadow: 0 0 15px rgba(255, 0, 168, 0.7);
+  transform: scale(1.1);
 }
 
 
