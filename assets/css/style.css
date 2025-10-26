@@ -87,12 +87,16 @@ body{
   transition: all 0.3s ease;
 }
 
-/* Optional hover effect */
 .icon:hover .say-hi-text {
   text-shadow: 0 0 15px rgba(255, 0, 168, 0.7);
   transform: scale(1.1);
 }
 
+.say-hi-link {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
 
 /* main page */
 .wrapper{
@@ -542,24 +546,36 @@ body{
   color: #fff;
 }
 
-.card-galaxy {
-  background: transparent;
-  border: none;
+.card-link {
+  text-decoration: none; /* remove underline */
+  color: inherit; /* inherit text color */
+  display: block; /* makes the link wrap the whole card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-link:hover .card-project {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(162, 109, 180, 0.6);
+}
+
+
+.card-project {
+  background: rgba(255, 255, 255, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
   border-radius: 1rem;
-  /* box-shadow: 0 0 28px rgba(255, 255, 255, 0.35); */
   transition: transform 0.35s ease, box-shadow 0.35s ease, background-position 2s ease;
   overflow: hidden;
 }
 
-.card-galaxy:hover {
-  transform: translateY(-6px);
+.card-project:hover {
+  transform: translateY(-3px);
   background-position: 100% 50%;
-  box-shadow: 0 0 44px rgba(223, 212, 219, 0.6);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
 }
 
 /* Project Image */
 .project-img {
-  height: 300px;
+  /* height: 50px; */
   object-fit: cover;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -570,24 +586,6 @@ body{
 .card-galaxy:hover .project-img {
   opacity: 1;
   transform: scale(1.05);
-}
-
-/* Galaxy Button */
-.btn-galaxy {
-  color: #fff;
-  background: linear-gradient(180deg, #ffff, #8a89b8);
-   box-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
-  border: none;
-  border-radius: 50px;
-  padding: 10px 28px;
-  box-shadow: 0 0 16px rgba(255, 255, 255, 0.45);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn-galaxy:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 28px rgba(255, 255, 255, 0.8);
-  color: #fff;
 }
 
 .input {
