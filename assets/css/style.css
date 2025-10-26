@@ -439,7 +439,7 @@ body{
 .content-4{
   /* background-color: #3f3f3f; */
   /* background-color: #AAAAAA; */
-  /* background-color: black; */
+  /* background-color: black; */  
    background:
     /* pink glow left-middle */
     radial-gradient(circle at 20% 60%, #27225c 0%, transparent 60%),
@@ -528,3 +528,54 @@ input:checked + label .description {
 }
 
 
+.content-5{
+  background:
+    /* pink glow left-middle */
+    radial-gradient(circle at 20% 60%, #27225c 0%, transparent 60%),
+    /* green glow right-middle */
+    radial-gradient(circle at 80% 60%, #89c5e6 0%, transparent 60%),
+    /* violet glow center-middle */
+    radial-gradient(circle at 50% 55%, #a26db4 0%, transparent 65%),
+    /* main black base */
+    linear-gradient(to bottom, #000000 0%, #000000 15%, #090113 50%, #000000 85%, #000000 100%);
+  background-blend-mode: screen;
+  color: white;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border-radius: 15px;
+  padding: 2rem;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  color: #fff; 
+}
+
+form label {
+  color: #fff;
+}
+
+form .form-control {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+form .btn {
+  background: linear-gradient(90deg, #ffff, #8a89b8);
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  transition: 0.3s;
+}
+
+form .btn:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
+}
