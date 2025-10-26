@@ -72,7 +72,7 @@ body{
 }
 
 .content-1{
-  height: 650px;
+  height: 550px;
   /* background-color: #F0F0F0; */
   background-color: black;
   position: relative;
@@ -214,6 +214,9 @@ body{
 
 .social-media {
   /* background-color: white; */
+  width: 30%;
+  display: block;
+  margin: 0 auto;
   background: rgba(255, 255, 255, 0.1); 
   border: 1px solid rgba(255, 255, 255, 0.2); 
   border-radius: 15px;
@@ -259,44 +262,56 @@ body{
 
 
 .content-2{
-    background-color: black;
-    height: 550px;
-    position: relative;
-     z-index: 1;
+    /* background-color: black; */
+    height: 600px;
 }
 
-.content-2 .container,
-.content-2 h2,
-.content-2 p {
-  position: relative;
-  z-index: 2; 
+/* text container sits above image */
+.content-2 .container {
+  background: rgba(255, 255, 255, 0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border-radius: 15px;
+  padding: 2rem;
+
 }
 
 .sentence-1{
     font-size: 3em;
-    /* width: 70%; */
     line-height: 1;
 }
 
-.word1a{
-  font-family: "Bodoni Moda";
-    font-size: 2em;
-     color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-}
-
+.word1a,
 .word1{
   font-family: "Bodoni Moda";
-    font-size: 2em;
-    color: white;
+  font-size: 2em;
+  background: linear-gradient(90deg,  #27225c, #89c5e6 , #a26db4, #ff00a8);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: galaxyFlow 8s ease infinite alternate;
+  text-shadow: 0 0 12px rgba(177, 0, 232, 0.3);
 }
 
-.word2{
+.word2 {
   font-family: "Bodoni Moda";
   font-size: 2em;
-  color: white;
-  /* padding-left: 1em; */
+  background: linear-gradient(90deg, #ff00a8, #a26db4,#89c5e6,#27225c );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: galaxyFlow 8s ease infinite alternate;
+  text-shadow: 0 0 12px rgba(177, 0, 232, 0.3);
 }
+
+@keyframes galaxyFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 
 .sentence-2{
     width: 75%;
@@ -421,7 +436,7 @@ body{
   width: 200px;
   height: 60px;
   /* background: linear-gradient(90deg, #ffff, #8a89b8); */
-  box-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
+  box-shadow: 0 0 10px #AAAAAA, 0 0 10px #AAAAAA;
   border-radius: 35px;
   position: absolute;
   animation-timing-function: linear;
@@ -430,8 +445,14 @@ body{
 }
 
 .itemLeft p{
-  color: white;
-  text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
+  /* color: white; */
+  background: linear-gradient(90deg, #ff00a8, #a26db4,#89c5e6,#27225c );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: galaxyFlow 8s ease infinite alternate;
+  text-shadow: 0 0 12px rgba(177, 0, 232, 0.3);
+  /* text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA; */
 }
 
 .itemRight p{
@@ -442,13 +463,13 @@ body{
 .itemLeft {
   left: max(calc(200px * 8), 100%);
   animation-name: scrollLeft;
-    background: linear-gradient(90deg, #27225c, #89c5e6 , #a26db4); 
+  background-color: white;
 }
 
 .itemRight {
   right: max(calc(200px * 8), calc(100% + 200px));
   animation-name: scrollRight;
-  background: linear-gradient(90deg, #a26db4, #89c5e6, #27225c); 
+  background: linear-gradient(90deg, #a26db4, #89c5e6); 
 }
 
 .item1 {
@@ -488,16 +509,7 @@ body{
   /* background-color: #3f3f3f; */
   /* background-color: #AAAAAA; */
   /* background-color: black; */  
-   background:
-    /* pink glow left-middle */
-    radial-gradient(circle at 20% 60%, #27225c 0%, transparent 60%),
-    /* green glow right-middle */
-    radial-gradient(circle at 80% 60%, #89c5e6 0%, transparent 60%),
-    /* violet glow center-middle */
-    radial-gradient(circle at 50% 55%, #a26db4 0%, transparent 65%),
-    /* main black base */
-    linear-gradient(to bottom, #000000 0%, #000000 15%, #090113 50%, #000000 85%, #000000 100%);
-  background-blend-mode: screen;
+    /* background: rgba(255, 255, 255, 0.1);  */
   color: #fff;
 }
 
