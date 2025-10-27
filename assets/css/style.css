@@ -256,6 +256,11 @@ body{
   font-size: 30px;
 }
 
+.fa-file {
+  color: white !important;
+  font-size: 28px;
+}
+
 /* content 2 */
 .content-2 {
   height: 600px;
@@ -520,6 +525,10 @@ body{
 .card-galaxy:hover .project-img {
   opacity: 1;
   transform: scale(1.05);
+}
+
+.project-title{
+  text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
 }
 
 /* content 5 */
