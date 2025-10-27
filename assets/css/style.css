@@ -1,13 +1,12 @@
 *{
-    /* font-family: "Bodoni Moda", "Cormorant Garamond", serif; */
-        font-family: "Cormorant Garamond", serif;
-    margin-top: 0;
-    padding-top: 0;
+  font-family: "Cormorant Garamond", serif;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 body{
-    background-color: black;
-    padding-top: 100px;
+  background-color: black;
+  padding-top: 100px;
 }
 
 #preloader {
@@ -51,7 +50,7 @@ body{
 }
 
 .nav-link{
-    color: black !important;
+  color: black !important;
 }
 
 .logo-img{
@@ -73,14 +72,13 @@ body{
 .fa-comment {
   font-size: 40px;
   color: white;
-  /* text-shadow: 0 0 12px rgba(162, 109, 180, 0.4); */
-  /* text-shadow: 0 0 5px #AAAAAA, 0 0 5px #AAAAAA; */
 }
 
 .say-hi-text {
   font-family: "Bodoni Moda", serif;
   font-size: 1.2em;
   background: linear-gradient(180deg, #27225c, #89c5e6, #a26db4);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 10px rgba(162, 109, 180, 0.5);
@@ -99,19 +97,18 @@ body{
 }
 
 /* main page */
-.wrapper{
-    /* background-color: #F0F0F0; */
-    background-color: black;
+.wrapper {
+  background-color: black;
 }
 
-.content-1{
+/* content 1 */
+.content-1 {
   height: 550px;
-  /* background-color: #F0F0F0; */
   background-color: black;
   position: relative;
 }
 
-.background-container{
+.background-container {
   position: absolute;
   top: -120px;
   left: 0;
@@ -122,7 +119,7 @@ body{
   align-items: center;   
 }
 
-.background-img{
+.background-img {
   width: 1200px;
   filter: brightness(80%) blur(0.8px);
   box-shadow: 0 0 20px #AAAAAA, 0 0 5px #AAAAAA;
@@ -133,65 +130,54 @@ body{
   to { transform: translateY(-12px); }
 }
 
-.element-1-container{
+.element-1-container {
   position: absolute;
   top: -50px;
   left: 10px;
 }
 
-.element-1-img{
+.element-1-img {
   width: 450px; 
   animation: floatElement 3s ease-in-out infinite alternate;
 }
 
-.element-2-container{
+.element-2-container {
   position: absolute;
   left: 70%;
 }
 
-.element-2-img{
+.element-2-img {
   width: 450px; 
 }
 
 .vertical-text {
-    text-align: center;
-    line-height: 1;
-    padding-top: 4em;
+  text-align: center;
+  line-height: 1;
+  padding-top: 4em;
 }
 
-.word-1{
-    font-family: "Cormorant Garamond";
-    font-size: 1.5em;
-    /* font-weight: bold; */
-    /* color: #3f3f3f; */
-    /* color: #AAAAAA; */
-    color: white;
-    text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
-    /* filter: blur(2px); */
-    animation-delay: 0.3s;
+.word-1 {
+  font-family: "Cormorant Garamond";
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
+  animation-delay: 0.3s;
 }
 
-.word-2{
-    font-family: "Cormorant Garamond";
-    font-size: 1.5em;
-    /* font-weight: bold; */
-    /* color: black; */
-    color: white;
-    /* color: #AAAAAA; */
-    /* color: #3f3f3f; */
-    text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
-      animation-delay: 0.9s;
+.word-2 {
+  font-family: "Cormorant Garamond";
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
+  animation-delay: 0.9s;
 }
 
-.word-3{
-    font-family: "Cormorant Garamond";
-    font-size: 1.5em;
-    text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
-    /* font-weight: bold; */
-    /* color: #3f3f3f; */
-    color: white;
-    /* filter: blur(2px); */
-    animation-delay: 1.5s;
+.word-3 {
+  font-family: "Cormorant Garamond";
+  font-size: 1.5em;
+  text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
+  color: white;
+  animation-delay: 1.5s;
 }
 
 @keyframes fadeInUp {
@@ -227,26 +213,8 @@ body{
   animation-delay: 1.5s;
 }
 
-.get-in-touch-button-container{
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100vw;   
-  height: 100vh;  
-  display: flex;
-  justify-content: center;  
-  align-items: center;  
-}
-
-.get-in-touch-button{
-   background: linear-gradient(90deg, #ffff, #8a89b8);
-   box-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
-   border-radius: 50px;
-}
-
-
+/* social media */
 .social-media {
-  /* background-color: white; */
   width: 30%;
   display: block;
   margin: 0 auto;
@@ -267,58 +235,51 @@ body{
   text-decoration: none;
 }
 
-/* Hover glow like your galaxy theme */
 .social-link:hover {
   color: #ff00a8;
   text-shadow: 0 0 20px rgba(255, 0, 168, 0.8);
   transform: scale(1.2);
 }
 
-.fa-github{
-  /* color: black !important; */
+.fa-github {
   color: white !important;
   font-size: 30px;
 }
 
-.fa-linkedin-in{
-  /* color: black !important; */
+.fa-linkedin-in {
   color: white !important;
   font-size: 30px;
 }
 
-.fa-envelope{
-  /* color: black !important; */
+.fa-envelope {
   color: white !important;
   font-size: 30px;
 }
 
-
-
-.content-2{
-    /* background-color: black; */
-    height: 600px;
+/* content 2 */
+.content-2 {
+  height: 600px;
 }
 
-/* text container sits above image */
 .content-2 .container {
   background: rgba(255, 255, 255, 0.1); 
   border: 1px solid rgba(255, 255, 255, 0.2); 
   border-radius: 15px;
   padding: 2rem;
-
 }
 
-.sentence-1{
-    font-size: 3em;
-    line-height: 1;
+.sentence-1 {
+  font-size: 3em;
+  line-height: 1;
 }
 
 .word1a,
-.word1{
+.word1 {
   font-family: "Bodoni Moda";
   font-size: 2em;
   background: linear-gradient(90deg,  #27225c, #89c5e6 , #a26db4, #ff00a8);
   background-size: 300%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: galaxyFlow 8s ease infinite alternate;
@@ -330,6 +291,7 @@ body{
   font-size: 2em;
   background: linear-gradient(90deg, #ff00a8, #a26db4,#89c5e6,#27225c );
   background-size: 300%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: galaxyFlow 8s ease infinite alternate;
@@ -346,10 +308,10 @@ body{
 }
 
 
-.sentence-2{
-    width: 75%;
-    font-size: 1.5em;
-    color: white; 
+.sentence-2 {
+  width: 75%;
+  font-size: 1.5em;
+  color: white; 
 }
 
 .typing-paragraph {
@@ -377,25 +339,24 @@ body{
   }
 }
 
-.element-3-container{
+.element-3-container {
   position: absolute;
   top: -25%;
   left: -10%;
   z-index: 0; 
 }
 
-.element-3-img{
+.element-3-img {
   width: 450px;
 }
 
-
-.content-3{
-    height: 400px;
-    /* background-color: #F0F0F0; */
-    border-radius: 30px;
+/* content 3 */
+.content-3 {
+  height: 400px;
+  border-radius: 30px;
 }
 
-.content-3 h2{
+.content-3 h2 {
   color: white;
 }
 
@@ -411,9 +372,7 @@ body{
   transform: translateY(0);
 }
 
-
-/* try animation */
-.skills{
+.skills {
   color: #3f3f3f;
   font-size: 1.5em;
 }
@@ -435,23 +394,6 @@ body{
   );
 }
 
-.infinite-scroll:hover .itemLeft{
-  animation-play-state: paused;
-}
-
-.infinite-scroll:hover .itemRight{
-  animation-play-state: paused;
-}
-
-.itemLeft:hover,
-.itemRight:hover{
-  background-color: #e2e1e1;
-  box-shadow: none;
-  transform: scale(1.05); 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease; 
-}
-
 @keyframes scrollLeft {
   to {
     left: -200px;
@@ -465,10 +407,10 @@ body{
 }
 
 .itemLeft,
-.itemRight {margin-top: 15px;
+.itemRight {
+  margin-top: 15px;
   width: 200px;
   height: 60px;
-  /* background: linear-gradient(90deg, #ffff, #8a89b8); */
   box-shadow: 0 0 10px #AAAAAA, 0 0 10px #AAAAAA;
   border-radius: 35px;
   position: absolute;
@@ -477,18 +419,17 @@ body{
   animation-iteration-count: infinite;
 }
 
-.itemLeft p{
-  /* color: white; */
+.itemLeft p {
   background: linear-gradient(90deg, #ff00a8, #a26db4,#89c5e6,#27225c );
   background-size: 300%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: galaxyFlow 8s ease infinite alternate;
   text-shadow: 0 0 12px rgba(177, 0, 232, 0.3);
-  /* text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA; */
 }
 
-.itemRight p{
+.itemRight p {
   color: white;
   text-shadow: 0 0 10px #AAAAAA, 0 0 20px #AAAAAA;
 }
@@ -537,19 +478,15 @@ body{
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
 
-
+/* content 4 */
 .content-4{
-  /* background-color: #3f3f3f; */
-  /* background-color: #AAAAAA; */
-  /* background-color: black; */  
-    /* background: rgba(255, 255, 255, 0.1);  */
   color: #fff;
 }
 
 .card-link {
-  text-decoration: none; /* remove underline */
-  color: inherit; /* inherit text color */
-  display: block; /* makes the link wrap the whole card */
+  text-decoration: none; 
+  color: inherit; 
+  display: block; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -557,7 +494,6 @@ body{
   transform: scale(1.05);
   box-shadow: 0 0 25px rgba(162, 109, 180, 0.6);
 }
-
 
 .card-project {
   background: rgba(255, 255, 255, 0.1); 
@@ -573,9 +509,7 @@ body{
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
 }
 
-/* Project Image */
 .project-img {
-  /* height: 50px; */
   object-fit: cover;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -588,42 +522,12 @@ body{
   transform: scale(1.05);
 }
 
-.input {
-    display: none;
-}
-
-input:checked + label {
-    width: 600px;
-}
-
-input:checked + label .description {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
-
-.card[for="c1"] {
-    background-image: url('./img1.jpeg');
-}
-.card[for="c2"] {
-    background-image: url('./img2.jpeg');
-}
-.card[for="c3"] {
-    background-image: url('./img3.jpeg');
-}
-.card[for="c4"] {
-    background-image: url('./img4.jpeg');
-}
-
-
-.content-5{
+/* content 5 */
+.content-5 {
   background:
-    /* pink glow left-middle */
     radial-gradient(circle at 20% 60%, #27225c 0%, transparent 60%),
-    /* green glow right-middle */
     radial-gradient(circle at 80% 60%, #89c5e6 0%, transparent 60%),
-    /* violet glow center-middle */
     radial-gradient(circle at 50% 55%, #a26db4 0%, transparent 65%),
-    /* main black base */
     linear-gradient(to bottom, #000000 0%, #000000 15%, #090113 50%, #000000 85%, #000000 100%);
   background-blend-mode: screen;
   color: white;
