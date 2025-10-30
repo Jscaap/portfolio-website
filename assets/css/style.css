@@ -579,3 +579,105 @@ form .btn:hover {
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
   transform: scale(1.05);
 }
+
+
+/* Soso Studio Page */
+.carousel-img{
+  width:80%; 
+  height:auto; 
+  border-radius:20px;
+}
+
+.sosostudio-wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.snap-wrap {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.snap-slide {
+  min-height: 100vh;
+  scroll-snap-align: start;
+
+  display: flex;
+  flex-direction: column;       
+  justify-content: center;      
+  align-items: center;         
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+.snap-slide.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.snap-slide .container {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.snap-slide h2 {
+  margin-bottom: 1.5rem;
+}
+
+.snap-slide p {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sentence-1 {
+  font-size: 3em;
+  line-height: 1;
+}
+
+.word1a,
+.word1 {
+  font-family: "Bodoni Moda";
+  font-size: 2em;
+  background: linear-gradient(90deg,  #27225c, #89c5e6 , #a26db4, #ff00a8);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: galaxyFlow 8s ease infinite alternate;
+  text-shadow: 0 0 12px rgba(177, 0, 232, 0.3);
+}
+
+.word2 {
+  font-family: "Bodoni Moda";
+  font-size: 2em;
+  background: linear-gradient(90deg, #ff00a8, #a26db4,#89c5e6,#27225c );
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: galaxyFlow 8s ease infinite alternate;
+  text-shadow: 0 0 12px rgba(177, 0, 232, 0.3);
+}
+
+@keyframes galaxyFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.paragraph {
+  width: 100%;
+  font-size: 1.5em;
+  /* color: white;  */
+  color: #BFBFBF;
+}
+
+
