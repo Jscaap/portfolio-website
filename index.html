@@ -217,29 +217,29 @@
               <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
                   <h2 class="text-center mb-3">Send me a message!</h2>
-                  <p class="text-center mb-4">Got a question or proposal, or just want to say hello? Go ahead.</p> 
-                  <!-- Contact Form -->
-                  <form>
+                  <form action="https://formspree.io/f/mrborloo" method="POST">
                     <div class="mb-3">
-                      <label for="name" class="form-label">Your Name</label>
-                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="name" name="name" required>
                     </div>
 
                     <div class="mb-3">
-                      <label for="email" class="form-label">Email Address</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" name="_replyto" required>
                     </div>
 
                     <div class="mb-3">
-                      <label for="message" class="form-label">Your Message</label>
-                      <textarea class="form-control" id="message" rows="5" placeholder="Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?"></textarea>
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                     </div>
+
+                    <input type="hidden" name="_subject" value="New message from portfolio contact form">
+                    <input type="hidden" name="_redirect" value=""> 
 
                     <div class="text-center">
-                      <button type="submit" class="btn btn-primary px-4">Send</button>
+                      <button type="submit" class="btn btn-primary px-4 rounded-4">Send</button>
                     </div>
                   </form>
-
                 </div>
               </div>
             </div>
