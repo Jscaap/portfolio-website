@@ -9,6 +9,11 @@ body{
   padding-top: 100px;
 }
 
+html {
+  scroll-behavior: smooth;    
+  scroll-padding-top: 100px;   
+}
+
 #preloader {
   position: fixed;
   top: 0;
