@@ -722,4 +722,16 @@ form .btn:hover {
   color: #BFBFBF;
 }
 
+@media screen and (max-width: 300px) {
+  .background-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0px 20px 0px 20px;
+  }
 
+  .element-1-container {
+    top: -5px;
+    left: -60px;
+  }
+}
