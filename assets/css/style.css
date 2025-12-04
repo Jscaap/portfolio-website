@@ -523,6 +523,10 @@ html {
   color: #fff;
 }
 
+.card-clickable {
+  cursor: pointer;
+}
+
 .card-link {
   text-decoration: none; 
   color: inherit; 
